@@ -5,9 +5,10 @@ class_name MyResource
 @export var name: String
 
 
-func _init(p_name: String, p_texture: ImageTexture):
+func _init(p_name: String = "default", p_texture: ImageTexture = null):
 	name = p_name
 	image_texture = p_texture
+	
 
 
 func _to_string():
